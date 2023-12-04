@@ -1,0 +1,47 @@
+.main,*{
+    overflow: hidden;
+}
+.abc{
+
+    border: none;
+    border-bottom:2px solid rgb(235, 231, 226);
+
+    }
+    .ab{
+        margin-left:50px;!important
+        width:100px;!important
+    }
+.pos{
+    position: absolute;
+    top: 558px;
+    left: 116px;
+    color:grey;
+    text-align: center;
+
+}
+.bt{
+    border-radius: 40px;
+}
+.bt1{
+    border-radius: 40px;
+  width:121px;
+
+}
+.bc{
+    margin-left: 114px;;
+}
+.bt2{
+    border-radius: 40px;
+   position: absolute;
+   top:448px;
+   left:258px;
+   width:121px;
+
+}
+.im{
+    height: 800px;!important
+    width:800px;imo !important
+}
+.al{
+    align-items:center;
+}

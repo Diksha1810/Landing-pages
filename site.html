@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="css/practice.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <!-- logo -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn  btn-primary  active w-75 mt-4"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXexD5GzPZ6KQRfyHqlETIPSgRazKX-lPHYVWfRAQnFyO-k5OoAsaOO7qyiFuiw2eokvs&usqp=CAU"
+                            width="200px" height="50px"></button>
+                </div>
+                <div class="col-sm-6 ">
+                    <button type="button" class="btn  btn-secondary disable w-75 mt-4 mr-4"><img
+                            src="data:image/png;base64,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"
+                            alt="" width="200px" height="50px"></button>
+                </div>
+
+            </div>
+            <!-- search bar -->
+            <div class="row">
+
+
+
+                <div class="col-sm-5">
+                    <form class="form-group mt-4">
+                        <label class="text-muted "><small>Brand mall</small></label>
+
+
+                        <div class="form-check form-switch mt-0">
+                            <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                                checked>
+                            <label class="form-check-label " for="flexSwitchCheckChecked"></label>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-sm-7 mt-4">
+                    <div class="abc">
+                        <input type="text" class="form-control roumded w-75 text-center" placeholder="search your products"> 
+                        
+                               <i class="fa fa-search icon1 ml-4" aria-hidden="true" ></i>
+                            <i class="fa fa-microphone  icon2 mr-4" aria-hidden="true"></i><i
+                                class="fa fa-camera icon3 mr-4" aria-hidden="true"></i> </imput>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Sliding images -->
+        <div class="row  justify-content-center">
+
+
+            <div class="container">
+                <div class="col-sm-2 offset">
+
+                </div>
+                <div class="col-sm-10 ml-5 mr-5">
+
+                    <div id="demo" class="carousel slide" data-ride="carousel " data-interval="2000">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                            <li data-target="#demo" data-slide-to="3"></li>
+                            <li data-target="#demo" data-slide-to="4"></li>
+                            <li data-target="#demo" data-slide-to="5"></li>
+                        </ul>
+
+
+
+
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ml-5 mt-5 mr-5">
+                                <img src="images/download (1).jpg" alt="Los Angeles " width="1160" height="400 ">
+                            </div>
+                            <div class="carousel-item ml-5 mt-5 mr-5">
+                                <img src="images/download (2).jpg" alt="Chicago" width="1160" height="400 ">
+                            </div>
+                            <div class="carousel-item ml-5 mt-5 mr-5">
+                                <img src="images/download (3).jpg" alt="New York" width="1160" height="400 ">
+                            </div>
+
+                            <div class="carousel-item ml-5 mt-5 mr-5">
+                                <img src="images/download (3).jpg" alt="Los Angeles" width="1160" height="400 ">
+                            </div>
+                            <div class="carousel-item ml-5 mt-5 mr-5">
+                                <img src="images/download (4).jpg" alt="Chicago" width="1160" height="400 ">
+                            </div>
+                            <div class="carousel-item ml-5 mt-5 mr-5">
+                                <img src="images/download (8).jpg" alt="New York" width="1160" height="400 ">
+                            </div>
+
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+
+
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+
+                <div class="col-sm-1 offset">
+
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/download (6).jpg" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/download7.png" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/download (8).jpg" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/download (9).jpg" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-2">
+                    <img src="images/download (10).jpg" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-sm-1 offset">
+
+                </div>
+
+            </div>
+        </div>
+        <!-- discount Sections -->
+        <div class="row">
+        
+            <h1 class="text-info text-center mt-5 mb-5">50-70% offf</h1>
+            <div class="col-sm-1 offset">
+
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/jeans.jpg" height="130px" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Jeans for girls</h4>
+                        <p class="card-text"> starts at just Rs:599.00-/</p>
+                        <a href="#" class="btn btn-warning">go to section</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/tops.jpg" alt="Card image"height="130px">
+                    <div class="card-body">
+                        <h4 class="card-title"> tops for Girls </h4>
+                        <p class="card-text"> starts at just Rs:199.00-/</p>
+                        <a href="#" class="btn btn-warning">go to section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/stationary.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Stationary</h4>
+                        <p class="card-text"> starts at just Rs:99.00-/</p>
+                        <a href="#" class="btn btn-warning"> go to section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/grocery.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title"> grocery items</h4>
+                        <p class="card-text"> sugar at just Rs:9.00-/</p>
+                        <a href="#" class="btn btn-warning"> go to Grocery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 ml-4">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/self care.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Self Care</h4>
+                        <p class="card-text"> starts at just Rs:59.00-/</p>
+                        <a href="#" class="btn btn-warning"> go to section</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 offset">
+
+            </div>
+        </div>
+    
+        <!-- popular searches -->
+        <div class="row">
+
+            <H1 class="text-center mt-5 mb-5">Popular Searches</H1>
+            <div class="col-sm-1 offset">
+
+            </div>
+
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/mobiles.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Mobile Phones</h4>
+                        <p class="card-text"> at just Rs:5999.00-/</p>
+                        <a href="#" class="btn btn-warning"> Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/cookware.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">cookware</h4>
+                        <p class="card-text"> at just Rs:599.00-/</p>
+                        <a href="#" class="btn btn-warning"> Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/jewellery.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Jewellery</h4>
+                        <p class="card-text"> at just Rs:29.00-/</p>
+                        <a href="#" class="btn btn-warning"> Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 ">
+                <div class="card" style="width:200px">
+                    <img class="card-img-top" src="images/travel.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">Travell</h4>
+                        <p class="card-text"> at just Rs:1299.00-/</p>
+                        <a href="#" class="btn btn-warning"> Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 ">
+                <div class="card" style="width:220px">
+                    <img class="card-img-top" src="images/headphones.jpg" alt="Card image" height="150px">
+                    <div class="card-body">
+                        <h4 class="card-title">headphones</h4>
+                        <p class="card-text"> at just Rs:499.00-/</p>
+                        <a href="#" class="btn btn-warning"> Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <footer>
+
+                <div class="row">
+                    <ul>
+                        <li class="ab ">
+                            <a href="#"><i class="fa fa-home" aria-hidden="true"></i>
+                                <h4> Home
+                                </h4>
+                            </a>
+                        </li>
+                        <li class="ab">
+                            <a href="#"><i class="fa fa-bell" aria-hidden="true"></i>
+                                <h4>Notifications
+                                </h4>
+                            </a>
+                        </li>
+                        <li class="ab">
+                            <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                <h4> cart </h4>
+                            </a>
+                        </li>
+                        <li class="ab">
+                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
+                                <h4>
+                                    profile</h4>
+                            </a>
+                        </li>
+                        <li class="ab">
+                            <a href="#"><i class="fa fa-podcast" aria-hidden="true"></i>
+
+                                <h4>
+                                    orders</h4>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

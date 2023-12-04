@@ -1,0 +1,21 @@
+
+.banner{
+    background-image:url("../images/netflix.webp    "); 
+       height: 90vh;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;}
+        .pos{
+            position:absolute;
+            background-color: black;
+            top: 100px;
+            left: 582px;
+            opacity: 0.9 ;
+        }
+        .ab{
+            display: inline;
+            display: flex;
+        }
+        .abc{
+            margin-right: 20px;
+        }

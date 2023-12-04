@@ -1,0 +1,64 @@
+
+table tr td{
+    border:2px solid black;
+
+}
+.blank{
+    border:none;
+
+}
+.nonmetal{
+    background-color: rgb(186, 76, 186);
+    color:black;
+    font-weight: bold;
+}
+.alkali{
+    background-color: rgb(214, 70, 70);
+    color:black;
+    font-weight: bold;
+
+}
+.alkaline{
+    background-color:rgb(215, 160, 57);
+    color:black;
+    font-weight: bold;
+}
+.transition{
+    background-color: yellow;
+    color:black;
+    font-weight: bold;
+}
+.semimetals{
+    background-color:rgb(22, 115, 181);
+    color:black;
+    font-weight: bold;
+}
+.basicmetals{
+    background-color:rgb(18, 196, 18);
+    color:black;
+    font-weight: bold;
+
+}
+.halogen{
+    background-color:rgb(185, 15, 126);
+    color:black;
+    font-weight: bold;
+}
+.noblegas{
+     background-color:rgba(110, 69, 7, 
+   0.785);
+    color:black;
+    font-weight: bold;
+}
+.lanthenide{
+    background-color:rgb(19, 122, 105);
+     color:black;
+     font-weight: bold;
+
+}
+.actinide{
+    background-color:rgb(139, 53, 81);
+    color:black;
+    font-weight: bold;
+
+}

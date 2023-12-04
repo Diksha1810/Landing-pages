@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Arlobuns Free';
+    src: url('ArlobunsFree.woff2') format('woff2'),
+        url('ArlobunsFree.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    color:aliceblu
+}
+
